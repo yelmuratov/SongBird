@@ -1,0 +1,22 @@
+.pagination{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #008966;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.pagination li{
+  flex: auto;
+  text-align: center;
+  list-style: none;
+  font-size: 15px;
+  padding: 10px 40px;
+  color: #fff;
+}
+
+.pagination li.active{
+  background-color: #00BC8C;
+}

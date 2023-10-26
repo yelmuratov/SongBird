@@ -1,0 +1,16 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: auto;
+  color: #fff;
+}
+
+.logo img{
+  width: 200px;
+  height: 55px;
+}
+
+.score{
+  font-size: 20px;
+}

@@ -1,0 +1,159 @@
+.answers{
+  margin-top: 1.5rem;
+}
+
+.grid-container{
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.options,.instruction{
+  height: 304px;
+  background: #303030;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+.options{
+  display: flex;
+  flex-direction: column;
+}
+
+.options li{
+  list-style: none;
+  flex: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #444;
+  position: relative;
+  padding-left: 45px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.options li::after{
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 19px;
+  left: 18px;
+  background: #444444;
+}
+
+.options li.wrong::after{
+  background-color: red;
+}
+
+.options li.correct::after{
+  background-color: green;
+}
+
+.options li:hover{
+  background-color: #444444 ;
+}
+
+.instruction{
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.instruction span{
+  display: block;
+}
+
+.next-btn{
+  border: 1px solid #444;
+  color: #fff;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 0;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #00BC8C;
+  transition: .2s;
+}
+
+.next-btn:hover{
+  background-color: #00EFB2;
+}
+
+.next-btn:disabled{
+  background: #303030;
+}
+
+.descr img{
+  width: 200px;
+  height: 155px;
+  border-radius: 5px;
+}
+
+.descr-item{
+  display: flex;
+}
+
+.bird-descr{
+  font-size: 15px;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.decr-list-item{
+  width: 100%;
+  margin-left: 30px;
+}
+
+.descr-item h3{
+  color: #fff;
+  padding: 10px 0;
+  height: 25px;
+}
+
+.species{
+  width: 100%;
+  border: 1px solid #464545;
+  padding: 10px 0;
+  font-weight: normal;
+  border-left: none;
+  border-right: none;
+}
+
+.decr-list-item .audio-player{
+  margin-top: 1rem;
+}
+
+.decr-list-item  .time-bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  user-select: none;
+  margin-bottom: 20px;
+}
+
+.decr-list-item .audio-player .play-btn{
+  padding-left: 0;
+}
+
+.circle{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #737373;
+  position: absolute;
+  left: 0;
+  user-select: none;
+  cursor: pointer;
+}
+
+.decr-list-item .sound-information{
+  position: absolute;
+  top: 15px;
+}
+

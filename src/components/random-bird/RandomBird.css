@@ -1,0 +1,83 @@
+.bird-card{
+  display: flex;
+  justify-content: space-between;
+  background-color: #303030;
+  padding: 1rem;
+  text-align: left;
+  line-height: 1.5;
+  border-radius: 5px;
+}
+
+.bird-card img{
+  width: 200px;
+  height: 155px;
+  border-radius: 10px;
+}
+
+.list-group{
+  width: 100%;
+  padding:0 3rem;
+}
+
+.list-group li{
+  list-style: none;
+}
+
+.list-group-item h1{
+  font-size: 35px;
+  color: #fff;
+  border-bottom: 2px solid #464545;
+  letter-spacing: 2px;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.controls{
+  display: flex;
+  align-items: center;
+}
+
+.controls .play-btn{
+  border: 2px solid #00bc8c;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+  color: #00bc8c;
+  padding-left: 2px;
+  margin-bottom: 20px;
+}
+
+.progress-bar{
+  width: 100%;
+}
+
+.time-bar{
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  background: #737373;
+}
+
+.time-bar::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #737373;
+  cursor: pointer;
+}
+
+.sound-information{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-top: 5px;
+  color: #fff;
+  font-size: 14px;
+}
